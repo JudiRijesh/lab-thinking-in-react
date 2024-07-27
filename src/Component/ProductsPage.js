@@ -27,7 +27,7 @@ function ProductsPage() {
   return (
     <div>
         <h1>IronStore</h1>
-        <SearchBar sortByPrice={sortByPrice} sortByName={sortByName} />
+        <SearchBar setProducts = {setProducts} products ={products} allProducts = {goodsData} sortByPrice={sortByPrice} sortByName={sortByName} />
         <br />
         <br />
         <h2><ProductTable products= {products}/></h2>
